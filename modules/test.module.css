@@ -2,3 +2,137 @@
     height: 80vh;
     background-color: aliceblue;
 }
+.container {
+  max-width: 600px;
+  min-height: 80vh;
+  margin: 0 auto;
+  padding: 24px 16px;
+  background-color: aliceblue;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.inputSection {
+  margin-bottom: 16px;
+}
+
+.inputRow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .inputRow { flex-direction: row; align-items: flex-end; }
+}
+
+.inputRow label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.input, .select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: steelblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover { background-color: royalblue; }
+
+.errorText {
+  color: red;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.filterRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.filterButton {
+  padding: 6px 12px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+}
+
+.activeFilter {
+  padding: 6px 12px;
+  border: 1px solid steelblue;
+  border-radius: 4px;
+  background: steelblue;
+  color: white;
+  cursor: pointer;
+}
+
+.emptyMessage {
+  color: gray;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.list { list-style: none; padding: 0; margin: 0; }
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+  gap: 8px;
+}
+
+.taskLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.taskInfo { display: flex; flex-direction: column; gap: 2px; }
+
+.taskText { font-size: 16px; }
+
+.completedText {
+  font-size: 16px;
+  color: gray;
+  text-decoration: line-through;
+}
+
+.priorityText { font-size: 12px; color: gray; }
+
+.deleteButton {
+  padding: 5px 10px;
+  border: 1px solid red;
+  border-radius: 4px;
+  background: white;
+  color: red;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.deleteButton:hover { background: red; color: white; }
